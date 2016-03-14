@@ -27,7 +27,7 @@ class VendingMachine {
   }
 
   public function setDrinkOutlet() {
-    $this->drinkOutlet = $this->drinkButton;
+    $this->drinkOutlet = $this->drinkButton->value;
     $this->drinkButton = "";
   }
 }

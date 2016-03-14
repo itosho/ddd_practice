@@ -1,33 +1,47 @@
 <?php
 
-/* Drinkクラス */
+require_once('DrinkName.php');
+
+/* Entity */
 class Drink {
 
   public $drinkName;
+
+  public function __construct(DrinkName $drinkName) {
+    $this->drinkName = $drinkName;
+  }
 
   public function getDrinkName() {
     return $this->drinkName;
   }
 }
 
-/* Colaクラス */
+/* Entity */
 class Cola extends Drink {
-  public $drinkName = "Cola";
+  public function __construct() {
+    parent::__construct(new DrinkName("コーラ"));
+  }
 }
 
-/* Fantaクラス */
+/* Entity */
 class Fanta extends Drink {
-  public $drinkName = "Fanta";
+  public function __construct() {
+    parent::__construct(new DrinkName("ファンタ"));
+  }
 }
 
-/* Fantaクラス */
+/* Entity */
 class Soda extends Drink {
-  public $drinkName = "Soda";
+  public function __construct() {
+    parent::__construct(new DrinkName("ソーダ"));
+  }
 }
 
-/* Pocariクラス */
+/* Entity */
 class Pocari extends Drink {
-  public $drinkName = "Pocari";
+  public function __construct() {
+    parent::__construct(new DrinkName("ポカリ"));
+  }
 }
 
 ?>
