@@ -2,7 +2,7 @@
 
 require_once('DrinkName.php');
 
-/* Entity */
+/* Value Obeject */
 class Drink {
 
   public $drinkName;
@@ -16,28 +16,28 @@ class Drink {
   }
 }
 
-/* Entity */
+/* Value Obeject */
 class Cola extends Drink {
   public function __construct() {
     parent::__construct(new DrinkName("コーラ"));
   }
 }
 
-/* Entity */
+/* Value Obeject */
 class Fanta extends Drink {
   public function __construct() {
     parent::__construct(new DrinkName("ファンタ"));
   }
 }
 
-/* Entity */
+/* Value Obeject */
 class Soda extends Drink {
   public function __construct() {
     parent::__construct(new DrinkName("ソーダ"));
   }
 }
 
-/* Entity */
+/* Value Obeject */
 class Pocari extends Drink {
   public function __construct() {
     parent::__construct(new DrinkName("ポカリ"));
