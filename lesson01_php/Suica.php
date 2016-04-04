@@ -1,10 +1,12 @@
 <?php
-/* Suicaクラス */
+/* Entity */
 class Suica {
 
-  public $balance = 0;
+  public $suicaId;
+  public $balance;
 
-  public function __construct($balance) {
+  public function __construct($suicaId, $balance) {
+    $this->suicaId = $suicaId;
     $this->balance = $balance;
   }
 
